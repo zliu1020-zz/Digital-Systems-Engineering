@@ -1,0 +1,11 @@
+    INFO: Starting PRECISION_RTL for logic synthesis
+precision: Setting MGC_HOME to /opt-src/CMC/local/maagaard/tools/mentor/precision/Mgc_home ...
+precision: Executing on platform: CentOS Linux release 7.5.1804 (Core)  -- 3.10.0-862.2.3.el7.x86_64 -- x86_64 
+    INFO: generic-gate       netlist         written to uw_tmp/mult_gate.vhd
+    INFO: 
+    INFO: ***********************************************
+    INFO: *
+    INFO: * uw-synth to MODGEN was successful
+    INFO: * log file stored in LOG/uw-synth.log
+    INFO: *
+    INFO: ***********************************************

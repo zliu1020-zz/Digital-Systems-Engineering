@@ -1,0 +1,9 @@
+uw-sim /home/ece327/bin/uw-sim -Gtest_num=4 lab3.uwp
+    INFO: Using testbench        : lab3_tb
+    INFO: Using design entity    : lab3
+    INFO: Using simulation script: lab3_tb.sim
+Model Technology ModelSim SE-64 vmap 10.5c Lib Mapping Utility 2016.07 Jul 20 2016
+vmap -c 
+Warning: vmap will not overwrite local modelsim.ini.
+Warning: Library already exists at "work-msim".
+Reading pref.tcl

@@ -1,0 +1,13 @@
+BOARD = STRATIXV
+BOARD = lstep
+
+LIB_VHDL      = util.vhd
+
+TB_ENTITY     = lab3_tb
+TB_ARCH       = main
+TB_VHDL       = util_unsynth.vhd lab3_unsynth_pkg.vhd lab3_tb.vhd
+SIM_SCRIPT    = lab3_tb.sim
+
+DESIGN_ENTITY = lab3_top
+DESIGN_ARCH   = main
+DESIGN_VHDL   = mem.vhd lab3.vhd components.vhd lab3_top.vhd

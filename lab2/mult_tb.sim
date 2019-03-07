@@ -1,0 +1,55 @@
+#----------------------------------------------------------------------
+
+# show only the basename for a signal
+config wave -signalnamewidth 1
+
+#----------------------------------------------------------------------
+# waveforms
+#----------------------------------------------------------------------
+
+if { $gui_mode } {
+  #------------------------------------------------------------
+  # add waves only if in gui mode
+  
+  add wave clk
+  add wave reset
+  add wave i_valid
+  add wave -radix unsigned a
+  add wave -radix unsigned b
+  add wave -color blue o_valid
+  add wave -radix unsigned -color blue z
+  if { $sim_mode eq "PROG_MODE" } {
+    add wave -color pink     sim:/mult_tb/uut/v
+    add wave -radix unsigned sim:/mult_tb/uut/a
+    add wave -radix unsigned sim:/mult_tb/uut/b
+#    add wave -radix unsigned sim:/mult_tb/uut/z
+  } elseif { $sim_mode eq "GATE_MODE" } {
+#    add wave -color pink     sim:/mult_tb/uut/gate/v
+    add wave -radix unsigned sim:/mult_tb/uut/gate/a
+    add wave -radix unsigned sim:/mult_tb/uut/gate/b
+    add wave -radix unsigned sim:/mult_tb/uut/gate/o_z
+  } else {
+#    add wave -color pink     sim:/mult_tb/uut/logic/v
+    add wave -radix unsigned sim:/mult_tb/uut/logic/a
+    add wave -radix unsigned sim:/mult_tb/uut/logic/b
+    add wave -radix unsigned sim:/mult_tb/uut/logic/o_z
+  }
+}
+
+#----------------------------------------------------------------------
+# run simulation
+#----------------------------------------------------------------------
+
+run 500 ns
+
+#----------------------------------------------------------------------
+# exit
+#----------------------------------------------------------------------
+# if in gui mode, then zoom to see the complete simulation trace
+# if in command line mode, exit
+
+if { $gui_mode } then {
+  wave zoom full
+} else {
+  exit
+}  

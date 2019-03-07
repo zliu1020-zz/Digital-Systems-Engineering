@@ -1,0 +1,13 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='heatingsys'>
+	<useClause path='altera.altera_primitives_components.all' />
+	<useClause path='lpm.LPM_COMPONENTS.all' />
+	<useClause path='altera_mf.altera_mf_components.all' />
+	<useClause path='ieee.std_logic_1164.all' />
+	<portList>
+		<port name='reset' direction='in' type='STD_LOGIC' kind='' />
+		<port name='clk' direction='in' type='STD_LOGIC' kind='' />
+		<port name='i_cur_temp' direction='in' type='STD_LOGIC_VECTOR (7 downto 0)' kind='array' library='work' package='heatingsys' packedDimension='(7 downto 0)' />
+		<port name='i_des_temp' direction='in' type='STD_LOGIC_VECTOR (7 downto 0)' kind='array' library='work' package='heatingsys' packedDimension='(7 downto 0)' />
+		<port name='o_heatmode' direction='out' type='STD_LOGIC_VECTOR (1 downto 0)' kind='array' library='work' package='heatingsys' packedDimension='(1 downto 0)' />
+	</portList>
+</interfaceDefinition>

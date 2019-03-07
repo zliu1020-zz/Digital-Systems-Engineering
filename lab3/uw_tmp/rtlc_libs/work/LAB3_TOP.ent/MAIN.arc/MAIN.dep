@@ -1,0 +1,15 @@
+1529869335.736854
+*3068562787
+work	/home/z363liu/ece327/lab3/uw_tmp/rtlc_libs/work	LAB3_TOP	LAB3_TOP	0	2971623731
+work	/home/z363liu/ece327/lab3/uw_tmp/rtlc_libs/work	UART	UART	0	2334577728
+IEEE	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+IEEE	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	NUMERIC_STD	NUMERIC_STD	2	0
+work	/home/z363liu/ece327/lab3/uw_tmp/rtlc_libs/work	MAIN	UART	1	3622053833
+work	/home/z363liu/ece327/lab3/uw_tmp/rtlc_libs/work	LAB3	LAB3	0	1301128064
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	NUMERIC_STD	NUMERIC_STD	2	0
+work	/home/z363liu/ece327/lab3/uw_tmp/rtlc_libs/work	MAIN	LAB3	1	1982590107
+work	/home/z363liu/ece327/lab3/uw_tmp/rtlc_libs/work	NUM_SEG7	NUM_SEG7	0	2148835093
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	STD_LOGIC_1164	STD_LOGIC_1164	2	0
+ieee	/opt/Precision_Synthesis_2015/Mgc_home/pkgs/rtlc_psr.ixl/rtlc/IEEE_2008	NUMERIC_STD	NUMERIC_STD	2	0
+work	/home/z363liu/ece327/lab3/uw_tmp/rtlc_libs/work	MAIN	NUM_SEG7	1	2405325824

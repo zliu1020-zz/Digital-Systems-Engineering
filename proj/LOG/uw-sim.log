@@ -1,0 +1,10 @@
+uw-sim /home/ece327/bin/uw-sim -Gtest_num=3 kirsch.uwp
+    INFO: Using testbench        : kirsch_tb
+    INFO: Using design entity    : kirsch
+    INFO: Using simulation script: kirsch_tb.sim
+Model Technology ModelSim SE-64 vmap 10.5c Lib Mapping Utility 2016.07 Jul 20 2016
+vmap -c 
+Warning: vmap will not overwrite local modelsim.ini.
+Warning: Library already exists at "work-msim".
+Reading pref.tcl
+    INFO: Keyboard interrupt when running `vsim -lib work-msim -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera_mf -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/lpm -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/altera_primitives -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/fiftyfivenm -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/fiftyfivenm-enc -L /opt-src/CMC/local/maagaard/kits-sim/altera-15.1/maxv   -g/kirsch_tb/test_num=3 -g/kirsch_tb/period=20   -debugDB -postsimdataflow +autofindloop -wlf uw_tmp/vsim.wlf -voptargs=+acc -warning 3250 -warning 3894 -t 1ns -do uw_tmp/uw-sim.tcl kirsch_tb'

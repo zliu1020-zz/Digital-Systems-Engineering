@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "uart_tx",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_en[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_en[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[0]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[1]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[2]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[3]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[4]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[5]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[6]",
+					"strict" : false
+				},
+				{
+					"name" : "seg7_data[7]",
+					"strict" : false
+				},
+				{
+					"name" : "led[0]",
+					"strict" : false
+				},
+				{
+					"name" : "led[1]",
+					"strict" : false
+				},
+				{
+					"name" : "led[2]",
+					"strict" : false
+				},
+				{
+					"name" : "led[3]",
+					"strict" : false
+				},
+				{
+					"name" : "led[4]",
+					"strict" : false
+				},
+				{
+					"name" : "led[7]",
+					"strict" : false
+				},
+				{
+					"name" : "uart_rx",
+					"strict" : false
+				},
+				{
+					"name" : "sw[0]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[1]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[2]",
+					"strict" : false
+				},
+				{
+					"name" : "sw[7]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "reset_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

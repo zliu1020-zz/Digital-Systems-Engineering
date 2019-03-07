@@ -1,0 +1,48 @@
+if { $gui_mode } {
+  #------------------------------------------------------
+  # add waves only if in gui mode
+  
+  #------------------------------------------------------
+  add wave sim:/lab3_tb/reset
+  add wave sim:/lab3_tb/clk
+  add wave sim:/lab3_tb/i_valid
+  add wave sim:/lab3_tb/i_data
+  
+  if { $sim_mode eq "PROG_MODE" } then {
+    #------------------------------------------
+    # signals that are traced in --prog mode
+    # uncomment the lines below and 
+    # add a signal name from your lab3.vhd to the end of each line below
+    # 
+    add wave -color "cornflower blue" -radix unsigned sim:/lab3_tb/uut/o_done
+    # add wave -color "coral"           -radix decimal  sim:/lab3_tb/uut/
+    # add wave -color "slate blue"                      sim:/lab3_tb/uut/
+    #------------------------------------------
+  } else {
+    #------------------------------------------
+    # signals that are traced in --chip and --logic mode
+    #------------------------------------------
+  }
+  
+  #------------------------------------------------------
+  # additional signals that are traced in all modes
+  #
+  add wave -color "blue2" -radix unsigned sim:/lab3_tb/o_done
+  add wave -color "blue2" -radix unsigned sim:/lab3_tb/o_data
+  
+}
+
+#----------------------------------------------------------------------
+# code to run in both command line and gui mode
+
+run 21 us
+
+#----------------------------------------------------------------------
+# if in gui mode, then zoom to see the complete simulation trace
+# if in command line mode, exit
+
+if { $gui_mode } {
+  wave zoom full
+} else {  
+  exit
+}

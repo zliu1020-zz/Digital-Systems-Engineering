@@ -1,0 +1,52 @@
+# Info: [9566]: Logging session transcript to file /home/z363liu/ece327/lab1/precision.log
+//  Precision RTL Synthesis 64-bit 2015.2.16 (PS2015.2.1 Production Release) Tue Jan  5 23:04:49 PST 2016
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux z363liu@ecelinux2.uwaterloo.ca #1 SMP Wed May 9 18:05:47 UTC 2018 3.10.0-862.2.3.el7.x86_64 x86_64
+//  
+//  Start time Sat May 12 20:59:51 2018
+# -------------------------------------------------
+# Info: [9566]: Logging session transcript to file /home/z363liu/ece327/lab1/precision.log
+# COMMAND: dofile uw_tmp/uw-gate-synth-precision_rtl.tcl
+# Info: [9575]: The Results Directory has been set to: /home/z363liu/ece327/lab1/uw_tmp
+# Info: [9569]: Moving session transcript to file /home/z363liu/ece327/lab1/uw_tmp/precision.log
+# Info: [15298]: Setting up the design to use synthesis library "cycloneii.syn"
+# Info: [574]: The global max fanout is currently set to 1000 for Altera - Cyclone II.
+# Info: [15324]: Setting Part to: "EP2C70F896I".
+# Info: [15325]: Setting Process to: "8".
+# Info: [3022]: Reading file: /opt-src/CMC/local/maagaard/tools/mentor/precision/Mgc_home/pkgs/psr/techlibs/cycloneii.syn.
+# Info: [633]: Loading library initialization file /opt-src/CMC/local/maagaard/tools/mentor/precision/Mgc_home/pkgs/psr/userware/yeager_rename.tcl
+# Info: [40000]: vhdlorder, Release 2015b.13
+# Info: [40000]: Files sorted successfully.
+# Info: [40000]: hdl-analyze, Release RTLC-Precision 2015b.13
+# Info: [42502]: Analyzing input file "/home/z363liu/ece327/lab1/myflipflop.vhd" ...
+# Info: [656]: Current working directory: /home/z363liu/ece327/lab1/uw_tmp.
+# Info: [40000]: RTLC-Driver, Release RTLC-Precision 2015b.13
+# Info: [40000]: Last compiled on Dec 24 2015 14:33:45
+# Info: [44512]: Initializing...
+# Info: [44504]: Partitioning design ....
+# Info: [40000]: RTLCompiler, Release RTLC-Precision 2015b.13
+# Info: [40000]: Last compiled on Dec 24 2015 15:06:12
+# Info: [44512]: Initializing...
+# Info: [44522]: Root Module work.myflipflop(main): Pre-processing...
+# Info: [44523]: Root Module work.myflipflop(main): Compiling...
+# Info: [44842]: Compilation successfully completed.
+# Info: [44856]: Total lines of RTL compiled: 72.
+# Info: [44835]: Total CPU time for compilation: 0.0 secs.
+# Info: [44513]: Overall running time for compilation: 1.0 secs.
+# Info: [656]: Current working directory: /home/z363liu/ece327/lab1/uw_tmp.
+# Info: [15330]: Doing rtl optimizations.
+# Info: [659]: Finished compiling design.
+# Info: [3027]: Writing file: /home/z363liu/ece327/lab1/uw_tmp/myflipflop_gate.vhd.
+# Info: Info, Command 'auto_write' finished successfully
+# Info: *** synthesis to generic gates succeeded ***
+dofile uw_tmp/uw-gate-synth-precision_rtl.tcl
+# COMMAND: exit -force
+# Info: [9578]: The Results Directory has been closed.
+close_results_dir
+exit -force

@@ -1,0 +1,2 @@
+test1_prog = PASS
+test4_prog = PASS

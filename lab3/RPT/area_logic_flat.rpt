@@ -1,0 +1,100 @@
+//  Precision RTL Synthesis 64-bit 2015.2.16 (PS2015.2.1 Production Release) Tue Jan  5 23:04:49 PST 2016
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux z363liu@ecelinux1.uwaterloo.ca #1 SMP Fri Jun 15 04:15:27 UTC 2018 3.10.0-862.3.3.el7.x86_64 x86_64
+//  
+//  Start time Sun Jun 24 15:42:03 2018
+
+***************************************************************
+Device Utilization for 10M08SAE144C8GES
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               30      -            -
+LUTs                              792     8064      9.82%
+Registers                         574     8064      7.12%
+Memory Bits                       0       387072    0.00%
+DSP block 9-bit elems             0       48        0.00%
+---------------------------------------------------------------
+
+***********************************************************************
+
+Library: OPERATORS    Cell: modgen_counter_32_1    View: IMPLEMENTATION
+
+***********************************************************************
+
+  Cell                     Library  References     Total Area
+
+ GND                       max10     1 x
+ VCC                       max10     1 x
+ dffeas                    max10    32 x      1     32 Registers
+ fiftyfivenm_lcell_comb    max10    32 x      1     32 LUTs
+
+ Number of ports :                      72
+ Number of nets :                      100
+ Number of instances :                  66
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of LUTs :                       32
+ Number of Registers :                  32
+ Number of accumulated instances :      66
+
+***********************************************************************
+
+Library: OPERATORS    Cell: modgen_counter_32_0    View: IMPLEMENTATION
+
+***********************************************************************
+
+  Cell                     Library  References     Total Area
+
+ GND                       max10     1 x
+ VCC                       max10     1 x
+ dffeas                    max10    32 x      1     32 Registers
+ fiftyfivenm_lcell_comb    max10    33 x      1     33 LUTs
+
+ Number of ports :                      72
+ Number of nets :                      101
+ Number of instances :                  67
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of LUTs :                       33
+ Number of Registers :                  32
+ Number of accumulated instances :      67
+
+*********************************************
+
+Library: work    Cell: lab3_top    View: main
+
+*********************************************
+
+  Cell                     Library  References     Total Area
+
+ GND                       max10         1 x
+ NOT                       max10        12 x
+ TRI                       max10         3 x      1      3 TRIs
+ VCC                       max10         1 x
+ dffeas                    max10       510 x      1    510 Registers
+ fiftyfivenm_lcell_comb    max10       727 x      1    727 LUTs
+ modgen_counter_32_0       OPERATORS     1 x     32     32 Registers
+                                                 33     33 LUTs
+ modgen_counter_32_1       OPERATORS     1 x     32     32 Registers
+                                                 32     32 LUTs
+
+ Number of ports :                      30
+ Number of nets :                     1378
+ Number of instances :                1256
+ Number of references to this view :     0
+
+Total accumulated area : 
+ Number of LCs :                         0
+ Number of LUTs :                      792
+ Number of Registers :                 574
+ Number of TRIs :                        3
+ Number of accumulated instances :    1387

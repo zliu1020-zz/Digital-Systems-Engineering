@@ -1,0 +1,206 @@
+//  Precision RTL Synthesis 64-bit 2015.2.16 (PS2015.2.1 Production Release) Tue Jan  5 23:04:49 PST 2016
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux z363liu@ecelinux1.uwaterloo.ca #1 SMP Fri Jun 15 04:15:27 UTC 2018 3.10.0-862.3.3.el7.x86_64 x86_64
+//  
+//  Start time Sun Jun 24 15:42:03 2018
+
+***************************************************************
+Device Utilization for 10M08SAE144C8GES
+***************************************************************
+Resource                          Used    Avail   Utilization
+---------------------------------------------------------------
+IOs                               30      -            -
+LUTs                              808     8064     10.02%
+Registers                         574     8064      7.12%
+Memory Bits                       0       387072    0.00%
+DSP block 9-bit elems             0       48        0.00%
+---------------------------------------------------------------
+
+****************************************************************
+
+Library: work    Cell: dual_seg7_notri    View: main_unfold_1719
+
+****************************************************************
+
+  Cell                     Library  References     Total Area
+
+ GND                       max10     1 x
+ NOT                       max10     4 x
+ VCC                       max10     1 x
+ dffeas                    max10    21 x      1     21 Registers
+ fiftyfivenm_lcell_comb    max10    20 x      1     20 LUTs
+
+ Number of ports :                      27
+ Number of nets :                       74
+ Number of instances :                  47
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of LCs :                         0
+ Number of LUTs :                       20
+ Number of Registers :                  21
+ Number of accumulated instances :      47
+
+***************************************************************
+
+Library: work    Cell: num_seg7_notri    View: main_unfold_1345
+
+***************************************************************
+
+  Cell                     Library  References     Total Area
+
+ dual_seg7_notri           work      1 x     21     21 Registers
+                                             20     20 LUTs
+                                              0      0 LCs
+ fiftyfivenm_lcell_comb    max10    22 x      1     22 LUTs
+
+ Number of ports :                      21
+ Number of nets :                       43
+ Number of instances :                  23
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of LCs :                         0
+ Number of LUTs :                       42
+ Number of Registers :                  21
+ Number of accumulated instances :      69
+
+*****************************************************
+
+Library: work    Cell: uart    View: main_unfold_2098
+
+*****************************************************
+
+  Cell                     Library  References     Total Area
+
+ GND                       max10     1 x
+ NOT                       max10    13 x
+ VCC                       max10     1 x
+ dffeas                    max10    70 x      1     70 Registers
+ fiftyfivenm_lcell_comb    max10    74 x      1     74 LUTs
+
+ Number of ports :                      25
+ Number of nets :                      192
+ Number of instances :                 159
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of LUTs :                       74
+ Number of Registers :                  70
+ Number of accumulated instances :     159
+
+***********************************************************************
+
+Library: OPERATORS    Cell: modgen_counter_32_1    View: IMPLEMENTATION
+
+***********************************************************************
+
+  Cell                     Library  References     Total Area
+
+ GND                       max10     1 x
+ VCC                       max10     1 x
+ dffeas                    max10    32 x      1     32 Registers
+ fiftyfivenm_lcell_comb    max10    32 x      1     32 LUTs
+
+ Number of ports :                      72
+ Number of nets :                      100
+ Number of instances :                  66
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of LUTs :                       32
+ Number of Registers :                  32
+ Number of accumulated instances :      66
+
+***********************************************************************
+
+Library: OPERATORS    Cell: modgen_counter_32_0    View: IMPLEMENTATION
+
+***********************************************************************
+
+  Cell                     Library  References     Total Area
+
+ GND                       max10     1 x
+ VCC                       max10     1 x
+ dffeas                    max10    32 x      1     32 Registers
+ fiftyfivenm_lcell_comb    max10    33 x      1     33 LUTs
+
+ Number of ports :                      72
+ Number of nets :                      101
+ Number of instances :                  67
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of LUTs :                       33
+ Number of Registers :                  32
+ Number of accumulated instances :      67
+
+*****************************************
+
+Library: work    Cell: lab3    View: main
+
+*****************************************
+
+  Cell                     Library  References     Total Area
+
+ GND                       max10         1 x
+ NOT                       max10         3 x
+ VCC                       max10         1 x
+ dffeas                    max10       402 x      1    402 Registers
+ fiftyfivenm_lcell_comb    max10       601 x      1    601 LUTs
+ modgen_counter_32_0       OPERATORS     1 x     32     32 Registers
+                                                 33     33 LUTs
+ modgen_counter_32_1       OPERATORS     1 x     32     32 Registers
+                                                 32     32 LUTs
+
+ Number of ports :                      20
+ Number of nets :                     1098
+ Number of instances :                1010
+ Number of references to this view :     1
+
+Total accumulated area : 
+ Number of LCs :                         0
+ Number of LUTs :                      666
+ Number of Registers :                 466
+ Number of accumulated instances :    1141
+
+*********************************************
+
+Library: work    Cell: lab3_top    View: main
+
+*********************************************
+
+  Cell                     Library  References     Total Area
+
+ GND                       max10     1 x
+ NOT                       max10     1 x
+ TRI                       max10     3 x      1      3 TRIs
+ VCC                       max10     1 x
+ dffeas                    max10    17 x      1     17 Registers
+ fiftyfivenm_lcell_comb    max10    26 x      1     26 LUTs
+ lab3                      work      1 x      0      0 LCs
+                                            666    666 LUTs
+                                            466    466 Registers
+ num_seg7_notri            work      1 x      0      0 LCs
+                                             42     42 LUTs
+                                             21     21 Registers
+ uart                      work      1 x     70     70 Registers
+                                             74     74 LUTs
+
+ Number of ports :                      30
+ Number of nets :                       93
+ Number of instances :                  52
+ Number of references to this view :     0
+
+Total accumulated area : 
+ Number of LCs :                         0
+ Number of LUTs :                      808
+ Number of Registers :                 574
+ Number of TRIs :                        3
+ Number of accumulated instances :    1418

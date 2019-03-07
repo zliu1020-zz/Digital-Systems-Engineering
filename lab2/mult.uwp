@@ -1,0 +1,10 @@
+LIB_VHDL      = util.vhd
+
+TB_ENTITY     = mult_tb
+TB_ARCH       = main
+TB_VHDL       = util_unsynth.vhd mult_tb.vhd
+
+DESIGN_ENTITY = mult
+DESIGN_ARCH   = main
+DESIGN_VHDL   = mult.vhd
+

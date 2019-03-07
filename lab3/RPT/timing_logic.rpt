@@ -1,0 +1,27 @@
+-- POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+
+================================================================================================
+                   Clock Frequency Report
+
+	Domain                  Clock Name                            Min Period (Freq)             Required Period (Freq)
+	------                  ----------                            -----------------             ----------------------
+	xmplr_ClockDomain_clk   clk                                   9.573 (104.460 MHz)           20.000 (50.000 MHz)
+
+Setup Slack Path Summary
+
+               Data                                                                                 Data
+       Setup   Path   Source  Dest.                                                                 End 
+Index  Slack   Delay  Clock   Clock               Data Start Pin                   Data End Pin     Edge
+-----  ------  -----  ------  -----  -----------------------------------------  ------------------  ----
+  1    10.427  9.304  clk     clk    u_lab3_modgen_counter_column/reg_q(0)/clk  u_lab3_reg_p(31)/d  Rise
+  2    10.596  9.135  clk     clk    u_lab3_modgen_counter_column/reg_q(1)/clk  u_lab3_reg_p(31)/d  Rise
+  3    10.952  8.779  clk     clk    u_lab3_reg_subtrahend(0)(0)/clk            u_lab3_reg_p(31)/d  Rise
+  4    10.995  8.736  clk     clk    u_lab3_reg_minuend(0)(0)/clk               u_lab3_reg_p(31)/d  Rise
+  5    11.031  8.700  clk     clk    u_lab3_reg_subtrahend(0)(1)/clk            u_lab3_reg_p(31)/d  Rise
+
+-- Device: Altera - MAX 10 : 10M08SAE144C8GES : 8
+-- CTE report summary..
+                  CTE Report Summary
+
+Analyzing setup constraint violations 
+End CTE Report Summary ..... CPU Time Used: 0 sec.

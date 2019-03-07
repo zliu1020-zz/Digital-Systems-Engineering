@@ -1,0 +1,14 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='mult'>
+	<useClause path='work.util.all' />
+	<useClause path='ieee.NUMERIC_STD.all' />
+	<useClause path='ieee.std_logic_1164.all' />
+	<portList>
+		<port name='clk' direction='in' type='STD_LOGIC' kind='' />
+		<port name='reset' direction='in' type='STD_LOGIC' kind='' />
+		<port name='i_valid' direction='in' type='STD_LOGIC' kind='' />
+		<port name='i_a' direction='in' type='UNSIGNED (7 downto 0)' kind='array' library='work' package='mult' packedDimension='(7 downto 0)' />
+		<port name='i_b' direction='in' type='UNSIGNED (7 downto 0)' kind='array' library='work' package='mult' packedDimension='(7 downto 0)' />
+		<port name='o_valid' direction='out' type='STD_LOGIC' kind='' />
+		<port name='o_z' direction='out' type='UNSIGNED (7 downto 0)' kind='array' library='work' package='mult' packedDimension='(7 downto 0)' />
+	</portList>
+</interfaceDefinition>

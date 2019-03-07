@@ -1,0 +1,5 @@
+work "/home/z363liu/ece327/lab3/util.vhd" -2008 
+work "/home/z363liu/ece327/lab3/mem.vhd" -2008 
+work "/home/z363liu/ece327/lab3/lab3.vhd" -2008 
+work "/home/z363liu/ece327/lab3/components.vhd" -2008 
+work "/home/z363liu/ece327/lab3/lab3_top.vhd" -2008 

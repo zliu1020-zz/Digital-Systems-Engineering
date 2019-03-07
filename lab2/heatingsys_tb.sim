@@ -1,0 +1,7 @@
+add wave clk
+add wave rst
+add wave heatmode
+add wave des_temp
+add wave cur_temp
+
+run 300 ns

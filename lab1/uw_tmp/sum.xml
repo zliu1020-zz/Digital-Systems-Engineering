@@ -1,0 +1,9 @@
+<interfaceDefinition version='1.2' language='vhdl' kind='component' name='sum'>
+	<useClause path='ieee.std_logic_1164.all' />
+	<portList>
+		<port name='i_a' direction='in' type='STD_LOGIC' kind='' />
+		<port name='i_b' direction='in' type='STD_LOGIC' kind='' />
+		<port name='i_cin' direction='in' type='STD_LOGIC' kind='' />
+		<port name='o_sum' direction='out' type='STD_LOGIC' kind='' />
+	</portList>
+</interfaceDefinition>

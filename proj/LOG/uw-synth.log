@@ -1,0 +1,341 @@
+    INFO: Starting PRECISION_RTL for logic synthesis
+precision: Setting MGC_HOME to /opt-src/CMC/local/maagaard/tools/mentor/precision/Mgc_home ...
+precision: Executing on platform: CentOS Linux release 7.5.1804 (Core)  -- 3.10.0-862.6.3.el7.x86_64 -- x86_64 
+//  Precision RTL Synthesis 64-bit 2015.2.16 (PS2015.2.1 Production Release) Tue Jan  5 23:04:49 PST 2016
+//  
+//  Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
+//             Portions copyright 1991-2008 Compuware Corporation
+//                       UNPUBLISHED, LICENSED SOFTWARE.
+//            CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//          PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//  
+//  Running on Linux z363liu@ecelinux2.uwaterloo.ca #1 SMP Tue Jun 26 16:32:21 UTC 2018 3.10.0-862.6.3.el7.x86_64 x86_64
+//  
+//  Start time Fri Jul 13 20:09:59 2018
+-------------------------------------------------
+Info: Logging session transcript to file precision.log
+Info: The Results Directory has been set to: uw_tmp
+Info: Moving session transcript to file uw_tmp/precision.log
+Info: Setting up the design to use synthesis library "stratixiv.syn"
+Info: The global max fanout is currently set to 1000 for Altera - Stratix IV.
+Info: Setting Part to: "EP4SGX70HF35M".
+Info: Setting Process to: "3".
+Info: USING DESIGN ARCH
+Info: Reading file: /opt-src/CMC/local/maagaard/tools/mentor/precision/Mgc_home/pkgs/psr/techlibs/stratixiv.syn.
+Info: Loading library initialization file /opt-src/CMC/local/maagaard/tools/mentor/precision/Mgc_home/pkgs/psr/userware/armstrong_rename.tcl
+Info: vhdlorder, Release 2015b.13
+Info: Files sorted successfully.
+Info: hdl-analyze, Release RTLC-Precision 2015b.13
+INFO: Analyzing "util.vhd"
+INFO: Analyzing "kirsch_synth_pkg.vhd"
+INFO: Analyzing "mem.vhd"
+INFO: Analyzing "kirsch.vhd"
+Info: Current working directory: uw_tmp.
+Info: RTLC-Driver, Release RTLC-Precision 2015b.13
+Info: Last compiled on Dec 24 2015 14:33:45
+Info: Initializing...
+Info: Partitioning design ....
+Info: RTLCompiler, Release RTLC-Precision 2015b.13
+Info: Last compiled on Dec 24 2015 15:06:12
+Info: Initializing...
+Info: Root Module work.kirsch(main): Pre-processing...
+Info: Module work.mem(main){generic map (data_width => 8 addr_width => 8)}: Pre-processing...
+Info: Built-in hardware memory core inferred for variable ': mem.mem depth = 256, width = 8'.
+Warning: "kirsch.vhd", line 25: signal result has never been used.
+Info: Module work.mem(main){generic map (data_width => 8 addr_width => 8)}: Compiling...
+Info: Root Module work.kirsch(main): Compiling...
+Warning: "kirsch.vhd", line 28: Initial value for sum[11:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 28: Initial value for sum_n_nw[11:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 28: Initial value for sum_e_ne[11:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 28: Initial value for sum_s_se[11:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 28: Initial value for sum_w_sw[11:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 28: Initial value for acc[11:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 29: Initial value for col[7:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 30: Initial value for row[7:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 31: Initial value for mem_num[2:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Info: "kirsch.vhd", line 88: Sharing register dir_w_sw[2] with dir_w_sw[1]
+Info: "kirsch.vhd", line 88: Sharing register dir_e_ne[1] with dir_e_ne[2]
+Info: "kirsch.vhd", line 69: The comparison operator has been optimized to constant 0.
+Info: "kirsch.vhd", line 70: The comparison operator has been optimized to constant 0.
+Info: "kirsch.vhd", line 213: The comparison operator has been optimized to constant 0.
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[6]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[6]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[5]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[5]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[4]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[4]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[3]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[3]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[2]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[2]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[1]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[1]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[0]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[0]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[7]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[6]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[5]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[4]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[3]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[2]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[1]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[0]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with i[7]
+Info: "kirsch.vhd", line 194: Sharing register i[7] with i[6]
+Info: "kirsch.vhd", line 194: Sharing register i[6] with i[5]
+Info: "kirsch.vhd", line 194: Sharing register i[5] with i[4]
+Info: "kirsch.vhd", line 194: Sharing register i[4] with i[3]
+Info: "kirsch.vhd", line 194: Sharing register i[3] with i[2]
+Info: "kirsch.vhd", line 194: Sharing register i[2] with i[1]
+Info: "kirsch.vhd", line 194: Sharing register i[1] with i[0]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[7]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[6]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[5]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[4]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[3]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[2]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[1]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[0]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[6]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[5]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[4]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[3]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[2]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[1]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[0]
+Info: "kirsch.vhd", line 91: The comparison operator has been optimized to constant 1.
+Info: "kirsch.vhd", line 101: The comparison operator has been optimized to constant 1.
+Info: "kirsch.vhd", line 235: Macro Modgen_Counter "counter_up_clock_cnt_en_0_8" inferred for node "row".
+Info: "kirsch.vhd", line 239: Macro Modgen_Counter "counter_up_sclear_clock_clk_en_0_8" inferred for node "col".
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) dir_n_nw[1:0] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) dir_n_nw[2] to constant 1
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) dir_e_ne[1:0] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) sum_n_nw[11:0] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) mem_num[2:0] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) a[11:8] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) b[11:8] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) c[11:7] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) d[11:8] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) h[11:7] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) i[11:8] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) i[0] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) dir_s_se[0] to constant 1
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) dir_w_sw[0] to constant 1
+Info: "kirsch.vhd", line 134: Optimizing state bit(s) sum[11:10] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) sum_e_ne[11:8] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) sum_s_se[11:10] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) sum_w_sw[11:9] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) acc[11:10] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) e[11:8] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) f[11:8] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) g[11:8] to constant 0
+Info: Rebalanced Expression Tree...
+Info: Compilation successfully completed.
+Info: Counter Inferencing === Detected : 2, Inferred (Modgen/Selcounter/AddSub) : 2 (2 / 0 / 0), AcrossDH (Merged/Not-Merged) : (0 / 0), Not-Inferred (Acrossdh/Attempted) : (0 / 0), Local Vars : 0 ===
+Info: Total lines of RTL compiled: 382.
+Info: Total CPU time for compilation: 0.0 secs.
+Info: Overall running time for compilation: 1.0 secs.
+Info: Current working directory: uw_tmp.
+Info: Doing rtl optimizations.
+Info: Constraints: Precision will generate the constraint: create_clock [get_ports clk] -name clk -period 20 -waveform {0 10} on port:clk. Reason: setup_design -frequency. Please override the constraint if needed.
+Info: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+Info: Constraints: Precision Generated Clock Domains:
+Info: 	Domain Name: xmplr_ClockDomain_clk		Clock Name: clk
+Info: Finished compiling design.
+Info: Writing file: uw_tmp/kirsch_gate.vhd.
+Info: Info, Command 'auto_write' finished successfully
+Info: Writing file: uw_tmp/kirsch_gate.vhd.
+Info: Info, Command 'auto_write' finished successfully
+Info: Current working directory: uw_tmp.
+Info: Precision will use 3 processor(s).
+Info: Optimizing design view:.work.kirsch.main
+Info: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+Info: Constraints: Precision Generated Clock Domains:
+Info: 	Domain Name: xmplr_ClockDomain_clk		Clock Name: clk
+Info: Starting timing reports generation...
+Info: Timing reports generation done.
+Info: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+Info: Writing file: uw_tmp/kirsch.vhd.
+Info: Writing file: uw_tmp/kirsch.v.
+Info: Writing file: uw_tmp/kirsch.vqm.
+Info: -- Writing file uw_tmp/kirsch.tcl
+Info: exq_pr_compile_project gen_vcf kirsch 1
+Info: Finished synthesizing design.
+Info: Total CPU time for synthesis: 1.3 s secs.
+Info: Overall running time for synthesis: 1.8 s secs.
+Warning: Your synthesis will restart from the compile step.
+Info: Loading library initialization file /opt-src/CMC/local/maagaard/tools/mentor/precision/Mgc_home/pkgs/psr/userware/armstrong_rename.tcl
+Info: vhdlorder, Release 2015b.13
+Info: Files sorted successfully.
+Info: hdl-analyze, Release RTLC-Precision 2015b.13
+INFO: Analyzing "util.vhd"
+INFO: Analyzing "kirsch_synth_pkg.vhd"
+INFO: Analyzing "mem.vhd"
+INFO: Analyzing "kirsch.vhd"
+Info: Current working directory: uw_tmp.
+Info: RTLC-Driver, Release RTLC-Precision 2015b.13
+Info: Last compiled on Dec 24 2015 14:33:45
+Info: Initializing...
+Info: Partitioning design ....
+Info: RTLCompiler, Release RTLC-Precision 2015b.13
+Info: Last compiled on Dec 24 2015 15:06:12
+Info: Initializing...
+Info: Root Module work.kirsch(main): Pre-processing...
+Info: Module work.mem(main){generic map (data_width => 8 addr_width => 8)}: Pre-processing...
+Info: Built-in hardware memory core inferred for variable ': mem.mem depth = 256, width = 8'.
+Warning: "kirsch.vhd", line 25: signal result has never been used.
+Info: Module work.mem(main){generic map (data_width => 8 addr_width => 8)}: Compiling...
+Info: Root Module work.kirsch(main): Compiling...
+Warning: "kirsch.vhd", line 28: Initial value for sum[11:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 28: Initial value for sum_n_nw[11:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 28: Initial value for sum_e_ne[11:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 28: Initial value for sum_s_se[11:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 28: Initial value for sum_w_sw[11:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 28: Initial value for acc[11:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 29: Initial value for col[7:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 30: Initial value for row[7:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Warning: "kirsch.vhd", line 31: Initial value for mem_num[2:0] is ignored for synthesis. To allow initial value for synthesis, please set the attribute "allow_init_val" in HDL or enable the global support for initial value synthesis through "compile_initial_values" switch.
+Info: "kirsch.vhd", line 88: Sharing register dir_w_sw[2] with dir_w_sw[1]
+Info: "kirsch.vhd", line 88: Sharing register dir_e_ne[1] with dir_e_ne[2]
+Info: "kirsch.vhd", line 69: The comparison operator has been optimized to constant 0.
+Info: "kirsch.vhd", line 70: The comparison operator has been optimized to constant 0.
+Info: "kirsch.vhd", line 213: The comparison operator has been optimized to constant 0.
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[6]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[6]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[5]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[5]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[4]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[4]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[3]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[3]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[2]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[2]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[1]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[1]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with c[0]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with b[0]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[7]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[6]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[5]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[4]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[3]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[2]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[1]
+Info: "kirsch.vhd", line 194: Sharing register c[7] with d[0]
+Info: "kirsch.vhd", line 194: Sharing register b[7] with i[7]
+Info: "kirsch.vhd", line 194: Sharing register i[7] with i[6]
+Info: "kirsch.vhd", line 194: Sharing register i[6] with i[5]
+Info: "kirsch.vhd", line 194: Sharing register i[5] with i[4]
+Info: "kirsch.vhd", line 194: Sharing register i[4] with i[3]
+Info: "kirsch.vhd", line 194: Sharing register i[3] with i[2]
+Info: "kirsch.vhd", line 194: Sharing register i[2] with i[1]
+Info: "kirsch.vhd", line 194: Sharing register i[1] with i[0]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[7]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[6]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[5]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[4]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[3]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[2]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[1]
+Info: "kirsch.vhd", line 194: Sharing register h[0] with a[0]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[6]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[5]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[4]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[3]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[2]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[1]
+Info: "kirsch.vhd", line 194: Sharing register h[7] with h[0]
+Info: "kirsch.vhd", line 91: The comparison operator has been optimized to constant 1.
+Info: "kirsch.vhd", line 101: The comparison operator has been optimized to constant 1.
+Info: "kirsch.vhd", line 235: Macro Modgen_Counter "counter_up_clock_cnt_en_0_8" inferred for node "row".
+Info: "kirsch.vhd", line 239: Macro Modgen_Counter "counter_up_sclear_clock_clk_en_0_8" inferred for node "col".
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) dir_n_nw[1:0] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) dir_n_nw[2] to constant 1
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) dir_e_ne[1:0] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) sum_n_nw[11:0] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) mem_num[2:0] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) a[11:8] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) b[11:8] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) c[11:7] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) d[11:8] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) h[11:7] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) i[11:8] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) i[0] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) dir_s_se[0] to constant 1
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) dir_w_sw[0] to constant 1
+Info: "kirsch.vhd", line 134: Optimizing state bit(s) sum[11:10] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) sum_e_ne[11:8] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) sum_s_se[11:10] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) sum_w_sw[11:9] to constant 0
+Info: "kirsch.vhd", line 88: Optimizing state bit(s) acc[11:10] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) e[11:8] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) f[11:8] to constant 0
+Info: "kirsch.vhd", line 194: Optimizing state bit(s) g[11:8] to constant 0
+Info: Rebalanced Expression Tree...
+Info: Compilation successfully completed.
+Info: Counter Inferencing === Detected : 2, Inferred (Modgen/Selcounter/AddSub) : 2 (2 / 0 / 0), AcrossDH (Merged/Not-Merged) : (0 / 0), Not-Inferred (Acrossdh/Attempted) : (0 / 0), Local Vars : 0 ===
+Info: Total lines of RTL compiled: 382.
+Info: Total CPU time for compilation: 0.0 secs.
+Info: Overall running time for compilation: 1.0 secs.
+Info: Current working directory: uw_tmp.
+Info: Doing rtl optimizations.
+Info: Constraints: Precision will generate the constraint: create_clock [get_ports clk] -name clk -period 20 -waveform {0 10} on port:clk. Reason: setup_design -frequency. Please override the constraint if needed.
+Info: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+Info: Constraints: Precision Generated Clock Domains:
+Info: 	Domain Name: xmplr_ClockDomain_clk		Clock Name: clk
+Info: Finished compiling design.
+Info: Current working directory: uw_tmp.
+Info: Precision will use 3 processor(s).
+Info: Optimizing design view:.work.kirsch.main
+Info: Constraints: Precision will generate the following clock domain information against the clocks. Since the clock domain information is not provided by the user for the below clocks, all clocks are assumed to be synchronous clocks. This will result in all paths between the clock domains to be analyzed for timing. If this behaviour is not intended for any clock domain or path, please override using -domain option or false path constraint. Among these clocks, clock with the smallest period will be chosen as the default domain and the rest of the clock periods specified using multiply-by or divide-by factor.
+Info: Constraints: Precision Generated Clock Domains:
+Info: 	Domain Name: xmplr_ClockDomain_clk		Clock Name: clk
+Info: Starting timing reports generation...
+Info: Timing reports generation done.
+Info: POST-SYNTHESIS TIMING REPORTS ARE ESTIMATES AND SHOULD NOT BE RELIED ON TO MAKE QoR DECISIONS. For accurate timing information, please run place-and-route (P&R) and review P&R generated timing reports.
+Info: Writing file: uw_tmp/kirsch.vhd.
+Info: Writing file: uw_tmp/kirsch.v.
+Info: Writing file: uw_tmp/kirsch.vqm.
+Info: -- Writing file uw_tmp/kirsch.tcl
+Info: exq_pr_compile_project gen_vcf kirsch 1
+Info: Finished synthesizing design.
+Info: Total CPU time for synthesis: 1.2 s secs.
+Info: Overall running time for synthesis: 2.1 s secs.
+Info: clk
+Info: 1
+Info: 0
+Info: Writing file: uw_tmp/kirsch_logic.sdf.
+Info: Using verilog names style for SDF.
+Info: Do 'set sdf_names_style vhdl' to use vhdl names style for SDF.
+Info: Info, Command 'auto_write' finished successfully
+Info: *** logic synthesis succeeded ***
+    INFO: generic-gate       netlist         written to uw_tmp/kirsch_gate.vhd
+    INFO: generic-gate       area estimate   written to RPT/area_gate.rpt
+    INFO: logic-synthesis    netlist         written to uw_tmp/kirsch_logic.vhd
+    INFO: logic-synthesis    area estimate   written to RPT/area_logic.rpt
+    INFO: logic-synthesis    timing estimate written to RPT/timing_logic.rpt
+    INFO: --------------------------------------------------------------------------------
+    INFO: AREA = 147 cells (147 luts, 111 regs) (estimated by logic-synthesis)
+    INFO: Speed on Stratix IV = 222 MHz,  4.49 ns (estimated by logic-synthesis)
+    INFO: --------------------------------------------------------------------------------
+    INFO: CRITICAL PATHS (slowest 5 paths, estimated by logic synthesis)
+    INFO: ..........Delays.........
+    INFO:  Total  Datapath  Routing          Source              Dest
+    INFO: ------  --------  -------   --------------------  ---------------------
+    INFO:   4.49     4.34     0.15    acc(1)                o_dir(2)/d           
+    INFO:   4.49     3.98     0.50    sum(7)                sum(8)/ena           
+    INFO:   4.45     4.30     0.15    sum(8)                dir(2)/d             
+    INFO:   4.40     4.25     0.15    acc(2)                o_dir(2)/d           
+    INFO:   4.39     4.24     0.15    sum(9)                dir(2)/d             
+    INFO: 
+    INFO: OPTIMALITY
+    INFO:              ..............latency...............
+    INFO:              =<  8cyc   9cyc  10cyc   11cyc   12cyc
+    INFO: optimality   =  1510   1436   1366    1299    1236
+    INFO: 
+    INFO: ***********************************************
+    INFO: *
+    INFO: * uw-synth to STRATIXIV was successful
+    INFO: * log file stored in LOG/uw-synth.log
+    INFO: *
+    INFO: ***********************************************

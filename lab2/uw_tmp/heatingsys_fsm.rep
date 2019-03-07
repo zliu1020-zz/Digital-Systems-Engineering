@@ -1,0 +1,41 @@
+//Precision RTL Synthesis 64-bit 2015.2.16 (PS2015.2.1 Production Release) Tue Jan  5 23:04:49 PST 2016
+//
+//Copyright (c) Mentor Graphics Corporation, 1996-2016, All Rights Reserved.
+//           Portions copyright 1991-2008 Compuware Corporation
+//                     UNPUBLISHED, LICENSED SOFTWARE.
+//          CONFIDENTIAL AND PROPRIETARY INFORMATION WHICH IS THE
+//        PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS LICENSORS
+//
+//Running on Linux z363liu@ecelinux3.uwaterloo.ca #1 SMP Wed May 9 18:05:47 UTC 2018 3.10.0-862.2.3.el7.x86_64 x86_64
+//
+
+                                =======================                         
+                                Precision 64-bit 2015.2.16                         
+                                =======================                         
+
+
+
+                                FSM EXTRACTION ANALYSIS                         
+                                =======================                         
+
+
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Module : work.heatingsys(main)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Number of FSMs Extracted : 1
+
+1.
+--------------------------------------------------
+Number of States                : 3
+Primary State Variable          : state[1:0]
+Other State Variable(s)         : 1) o_heatmode[1:0]
+Async set/reset state(s)        : (none)
+Encoding Scheme: Preserving User Encoding
+FSM: Info, state encoding table:
+FSM:	Index	                            Literal	                      Encoding
+FSM:	    0	                                 00	                            00
+FSM:	    1	                                 01	                            01
+FSM:	    2	                                 11	                            11
+
+
+
